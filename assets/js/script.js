@@ -145,7 +145,7 @@ console.log(numeri.length);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const strumentiScuola = ["Penna", "Quaderno", "Zaino", "Astuccio"];
-strumentiScuola.splice(1, "Diario");
+strumentiScuola.splice(1, 1, "Diario");
 console.log(strumentiScuola);
 
 /* ESERCIZIO 10 — Cerca un articolo
