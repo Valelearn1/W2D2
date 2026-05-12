@@ -43,7 +43,7 @@ const utente = {
   indirizzo: {
     via: "Susa",
     citta: "Palermo",
-    cap: 90121,
+    cap: "90121",
   },
 };
 
@@ -167,6 +167,11 @@ console.log(prodotti.indexOf("Zaino"));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const utenti = {
+  nome: "Mario",
+  cognome: "Rossi",
+  eta: 30,
+};
 
 /* ESERCIZIO 12 — Inventario disponibili
    Array prodotti di 4 oggetti { nome, prezzo, disponibile }.
