@@ -75,11 +75,7 @@ if (numberOne > numberTwo && numberOne > numberThree) {
   console.log(numberTwo);
 } else if (numberThree > numberOne && numberThree > numberTwo) {
   console.log(numberThree);
-} else if (
-  numberOne === numberTwo ||
-  numberOne === numberThree ||
-  numberTwo === numberThree
-) {
+} else {
   console.log("Pareggio");
 }
 
@@ -97,7 +93,7 @@ if (total >= 50) {
   console.log("Spedizione gratuita");
 } else {
   console.log(
-    `Totale carrello: ${total}€ - Spedizione: ${shipmentFee}€ - Totale finale: ${total + shipmentFee}`,
+    `Totale carrello: ${total}€ - Spedizione: ${shipmentFee}€ - Totale finale: ${total + shipmentFee}€`,
   );
 }
 
