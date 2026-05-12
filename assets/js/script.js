@@ -202,3 +202,10 @@ console.table(utenti);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const myNumber = [1, 2, 3, 4, 5];
+const inverso = [];
+
+for (let i = 0; i < myNumber.length; i++) {
+  inverso.push(myNumber[i - 1]);
+}
+console.log(inverso);
