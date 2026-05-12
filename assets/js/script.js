@@ -127,12 +127,15 @@ for (let i = 0; i < mixedArray.length; i++) {
 const numeri = [1, 2, 3];
 numeri.push(4);
 console.log(numeri);
+console.log(numeri.length);
 
 numeri.push(5);
 console.log(numeri);
+console.log(numeri.length);
 
 numeri.unshift(0);
 console.log(numeri);
+console.log(numeri.length);
 
 /* ESERCIZIO 9 — Carrello con splice
    Array ["Penna", "Quaderno", "Zaino", "Astuccio"].
