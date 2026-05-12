@@ -55,11 +55,9 @@ console.log(utente.indirizzo.cap);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let person = {
-  chiave: "nome",
-};
+let chiave = "nome";
 
-console.log(person["chiave"]);
+console.log(persona[chiave]);
 
 /* ESERCIZIO 5 — Numero più grande
    Tre numeri a, b, c.
