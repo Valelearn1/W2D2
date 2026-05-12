@@ -106,9 +106,9 @@ if (total >= 50) {
 const mixedArray = [42, "ciao", true];
 for (let i = 0; i < mixedArray.length; i++) {
   if (typeof mixedArray[i] === "number") {
-    console.log("x è un numero");
+    console.log(`${mixedArray[i]} è un numero`);
   } else {
-    console.log("x non è un numero");
+    console.log(`${mixedArray[i]} non è un numero`);
   }
 }
 
@@ -118,12 +118,9 @@ for (let i = 0; i < mixedArray.length; i++) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const numeri = [1, 2, 3];
-numeri.push(4);
-console.log(numeri);
-console.log(numeri.length);
+const numeri = [];
+numeri.push(1, 2, 3, 4, 5);
 
-numeri.push(5);
 console.log(numeri);
 console.log(numeri.length);
 
@@ -139,6 +136,7 @@ console.log(numeri.length);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const strumentiScuola = ["Penna", "Quaderno", "Zaino", "Astuccio"];
+console.log(strumentiScuola);
 strumentiScuola.splice(1, 1, "Diario");
 console.log(strumentiScuola);
 
@@ -151,21 +149,40 @@ console.log(strumentiScuola);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const prodotti = ["Penna", "Quaderno", "Zaino"];
-console.log(prodotti.includes("Zaino"));
-console.log(prodotti.indexOf("Zaino"));
+let cercato = "Zaino";
+if (prodotti.includes(cercato)) {
+  console.log(`${cercato} è in carrello: ${prodotti.includes(cercato)}`);
+  console.log(`${cercato} è in posizione ${prodotti.indexOf(cercato)}`);
+} else {
+  console.log(`${cercato} non è nel carrello`);
+}
 
 /* ESERCIZIO 11 — Lista utenti
    Array utenti di 3 oggetti { nome, eta }.
    Con un for, stampa ogni utente: "Mario (25 anni)".
-   Aggiungi console.table(utenti) alla fine. //fuori dal for
+   Aggiungi console.table(utenti) alla fine.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const utenti = {
-  nome: "Mario",
-  cognome: "Rossi",
-  eta: 30,
-};
+const utenti = [
+  {
+    nome: "Mario",
+    eta: 30,
+  },
+  {
+    nome: "Anna",
+    eta: 26,
+  },
+  {
+    nome: "Fabio",
+    eta: 18,
+  },
+];
+
+for (let i = 0; i < utenti.length; i++) {
+  console.log(`${utenti[1].nome} (${utenti[1].eta}anni)`);
+}
+console.table(utenti);
 
 /* ESERCIZIO 12 — Inventario disponibili
    Array prodotti di 4 oggetti { nome, prezzo, disponibile }.
